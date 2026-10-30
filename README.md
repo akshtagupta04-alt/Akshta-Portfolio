@@ -1,4 +1,4 @@
-# Akshita Gupta — Portfolio
+# Akshta Gupta — Portfolio
 
 Responsive, single-page portfolio website based on the supplied resume.
 
