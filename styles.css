@@ -9,3 +9,15 @@
 @keyframes rise{from{transform:scaleY(.1);opacity:.2}to{transform:scaleY(1);opacity:1}}@keyframes orbit{to{transform:rotate(360deg)}}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:800px){.topbar{padding:0 6vw}.menu-toggle{display:block}nav{display:none;position:absolute;top:78px;left:0;right:0;background:#171321;padding:23px 7vw;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{grid-template-columns:1fr;padding:55px 0 75px;gap:22px}.visual{height:350px}.two{grid-template-columns:1fr;gap:20px}.skills{grid-template-columns:repeat(2,1fr)}.project.feature{grid-column:span 1;display:block}.projects{grid-template-columns:1fr}.timeline article{grid-template-columns:1fr;gap:11px}.wrap{width:88vw}}
 @media(max-width:480px){.hero h1{font-size:70px;letter-spacing:-5px}.hero h2{font-size:16px}.visual{height:300px}.dash{width:84%;padding:18px}.dash h3{font-size:18px;margin:24px 0 16px}.bars{height:110px}.skills{grid-template-columns:1fr}.facts{gap:18px}.contact h2{letter-spacing:-3px}.social{gap:14px;font-size:8px}footer{gap:12px;flex-wrap:wrap}.project>div:last-child{padding:20px}}
+
+
+/* Contrast correction for About section: keep text readable on all displays */
+.about-section{background:linear-gradient(135deg,#1b1728 0%,#21172a 55%,#171321 100%)!important;border:1px solid #ffffff20;border-radius:22px;padding:64px 5.5%!important;margin-top:18px;margin-bottom:18px;box-shadow:0 22px 65px #0005}
+.about-section .label{color:#F4C76B!important}
+.about-section .two h2{color:#FFF8F2!important}
+.about-section .two h2 em{background:linear-gradient(100deg,#FF8066,#F4C76B);background-clip:text;-webkit-background-clip:text;color:transparent}
+.about-section .two p{color:#E2D9E4!important}
+.about-section .facts{border-top-color:#ffffff35}
+.about-section .facts b{color:#FFF8F2!important}
+.about-section .facts small{color:#D1C2D1!important}
+@media(max-width:800px){.about-section{padding:38px 6%!important;border-radius:16px}}
