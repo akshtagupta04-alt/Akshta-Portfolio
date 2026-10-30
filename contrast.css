@@ -45,3 +45,14 @@
 #about .two p{color:#f1eaf2 !important}
 #about .facts b{color:#fffaf5 !important}
 #about .facts small{color:#ffd27a !important}
+
+
+/* Profile portrait in the hero */
+.portrait-visual{isolation:isolate;min-height:430px}
+.portrait-visual .profile-photo{position:absolute;z-index:1;right:9%;top:5%;height:88%;width:54%;object-fit:cover;object-position:center 24%;border-radius:48% 48% 18px 18px;border:1px solid #ffffff40;box-shadow:0 24px 65px #0008;filter:saturate(.92)}
+.portrait-visual .mini-dash{position:absolute;z-index:3;left:3%;bottom:9%;width:56%;padding:17px;background:#171321ed;backdrop-filter:blur(15px);transform:rotate(-3deg);border:1px solid #ffffff35}
+.portrait-visual .mini-dash h3{font-size:17px;margin:17px 0 12px}
+.portrait-visual .mini-dash .bars{height:82px;gap:7px}
+.portrait-visual .chip{z-index:4}
+@media(max-width:800px){.portrait-visual{min-height:350px}.portrait-visual .profile-photo{right:8%;width:58%;height:88%}.portrait-visual .mini-dash{width:60%;bottom:6%;padding:13px}.portrait-visual .mini-dash .bars{height:65px}}
+@media(max-width:480px){.portrait-visual{min-height:310px}.portrait-visual .profile-photo{width:62%;right:5%}.portrait-visual .mini-dash{width:63%;left:1%;bottom:5%}}
