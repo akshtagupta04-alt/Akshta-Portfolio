@@ -56,3 +56,48 @@
 .portrait-visual .chip{z-index:4}
 @media(max-width:800px){.portrait-visual{min-height:350px}.portrait-visual .profile-photo{right:8%;width:58%;height:88%}.portrait-visual .mini-dash{width:60%;bottom:6%;padding:13px}.portrait-visual .mini-dash .bars{height:65px}}
 @media(max-width:480px){.portrait-visual{min-height:310px}.portrait-visual .profile-photo{width:62%;right:5%}.portrait-visual .mini-dash{width:63%;left:1%;bottom:5%}}
+
+
+/* Hero portrait visibility: keep the complete face clear of floating UI */
+.portrait-visual{position:relative!important;overflow:hidden!important;min-height:500px!important}
+.portrait-visual .profile-photo{
+  z-index:3!important;
+  top:4%!important;
+  right:5%!important;
+  width:43%!important;
+  height:92%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  border-radius:28px!important;
+  background:#f0edf0!important;
+  box-shadow:0 18px 48px #0008!important;
+}
+.portrait-visual .mini-dash{
+  z-index:2!important;
+  left:3%!important;
+  bottom:8%!important;
+  width:49%!important;
+  max-width:330px!important;
+  padding:18px!important;
+  transform:rotate(-2deg)!important;
+}
+.portrait-visual .mini-dash h3{font-size:17px!important;margin:18px 0 12px!important}
+.portrait-visual .mini-dash .bars{height:76px!important;gap:7px!important}
+.portrait-visual .chip{z-index:4!important;padding:10px 12px!important}
+.portrait-visual .chip.one{top:22px!important;left:18px!important}
+.portrait-visual .chip.two{top:22px!important;right:18px!important;left:auto!important}
+.portrait-visual .chip.three{bottom:18px!important;left:18px!important}
+@media(max-width:800px){
+ .portrait-visual{min-height:430px!important}
+ .portrait-visual .profile-photo{right:3%!important;width:48%!important;height:88%!important}
+ .portrait-visual .mini-dash{width:48%!important;bottom:7%!important;padding:13px!important}
+ .portrait-visual .chip.two{top:70px!important;right:10px!important}
+}
+@media(max-width:480px){
+ .portrait-visual{min-height:390px!important}
+ .portrait-visual .profile-photo{right:2%!important;width:53%!important;height:84%!important;top:8%!important}
+ .portrait-visual .mini-dash{width:51%!important;left:2%!important;bottom:7%!important;padding:10px!important}
+ .portrait-visual .mini-dash h3{font-size:13px!important}
+ .portrait-visual .mini-dash .bars{height:52px!important}
+ .portrait-visual .chip{font-size:8px!important}
+}
