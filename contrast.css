@@ -281,3 +281,97 @@
 @media(max-width:800px){
  .hero>.portrait-visual{grid-column:1!important;width:100%!important;height:500px!important;min-height:500px!important}
 }
+
+
+/* Clean editorial portrait treatment — replaces experimental overlays */
+.hero>.portrait-visual{
+  width:min(100%,510px)!important;
+  height:545px!important;
+  min-height:545px!important;
+  margin:0 auto!important;
+  position:relative!important;
+  display:block!important;
+  overflow:visible!important;
+  isolation:isolate!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+}
+.hero>.portrait-visual:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  width:112%!important;
+  height:34%!important;
+  top:50%!important;
+  left:50%!important;
+  transform:translate(-50%,-50%)!important;
+  border:1px solid rgba(244,199,107,.28)!important;
+  border-radius:50%!important;
+  background:none!important;
+  animation:none!important;
+}
+.hero>.portrait-visual:after{content:none!important;display:none!important}
+.hero>.portrait-visual>.profile-photo{
+  position:absolute!important;
+  z-index:1!important;
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  top:3%!important;
+  left:12%!important;
+  width:76%!important;
+  height:94%!important;
+  object-fit:cover!important;
+  object-position:center 22%!important;
+  border-radius:26px!important;
+  border:1px solid rgba(255,255,255,.2)!important;
+  background:#201b27!important;
+  box-shadow:0 28px 70px rgba(0,0,0,.42)!important;
+}
+.portrait-status{
+  position:absolute!important;
+  z-index:3!important;
+  top:9%!important;
+  right:0!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding:12px 15px!important;
+  border-radius:30px!important;
+  background:#111018!important;
+  color:#F4C76B!important;
+  border:1px solid rgba(255,255,255,.2)!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.3)!important;
+  font:500 9px 'DM Mono',monospace!important;
+  letter-spacing:1px!important;
+}
+.portrait-status i{width:7px;height:7px;display:inline-block;border-radius:50%;background:#b8e58b;box-shadow:0 0 10px #b8e58b}
+.portrait-caption{
+  position:absolute!important;
+  z-index:2!important;
+  left:12%!important;
+  right:12%!important;
+  bottom:3%!important;
+  padding:58px 24px 22px!important;
+  border-radius:0 0 26px 26px!important;
+  background:linear-gradient(180deg,transparent 0%,rgba(9,8,14,.82) 48%,rgba(9,8,14,.96) 100%)!important;
+  color:#fff!important;
+}
+.portrait-caption>span{font:500 9px 'DM Mono',monospace!important;letter-spacing:1.5px!important;color:#F4C76B!important}
+.portrait-caption h3{font:800 clamp(24px,3vw,34px) Manrope,Arial,sans-serif!important;letter-spacing:-1px!important;color:#fff!important;margin:9px 0 4px!important}
+.portrait-caption p{font:9px 'DM Mono',monospace!important;letter-spacing:1px!important;color:#e3dce5!important;margin:0!important}
+.portrait-visual .mini-dash,.portrait-visual .chip{display:none!important}
+@media(max-width:800px){
+ .hero>.portrait-visual{grid-column:1!important;width:min(100%,500px)!important;height:500px!important;min-height:500px!important;margin:10px auto 0!important}
+ .hero>.portrait-visual>.profile-photo{left:10%!important;width:80%!important;height:94%!important}
+ .portrait-caption{left:10%!important;right:10%!important}
+ .portrait-status{right:0!important}
+}
+@media(max-width:480px){
+ .hero>.portrait-visual{height:430px!important;min-height:430px!important;width:100%!important}
+ .hero>.portrait-visual>.profile-photo{left:7%!important;width:86%!important;height:94%!important;top:2%!important;object-position:center 20%!important;border-radius:21px!important}
+ .portrait-caption{left:7%!important;right:7%!important;bottom:2%!important;padding:48px 17px 18px!important;border-radius:0 0 21px 21px!important}
+ .portrait-status{top:8%!important;right:0!important;padding:10px 12px!important;font-size:8px!important}
+ .portrait-caption h3{font-size:25px!important}
+}
