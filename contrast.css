@@ -141,3 +141,109 @@
  .portrait-visual .mini-dash{width:50%!important;bottom:7%!important}
  .portrait-visual .chip.two{top:18px!important;right:8px!important}
 }
+
+
+/* Portrait hero composition inspired by the supplied reference */
+.portrait-visual{
+  position:relative!important;
+  min-height:545px!important;
+  height:545px!important;
+  max-width:560px!important;
+  margin-inline:auto!important;
+  overflow:hidden!important;
+  display:block!important;
+  isolation:isolate!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.portrait-visual:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  width:510px!important;
+  height:180px!important;
+  top:48%!important;
+  left:50%!important;
+  transform:translate(-50%,-50%)!important;
+  border:1px solid rgba(244,199,107,.42)!important;
+  border-radius:50%!important;
+  background:none!important;
+}
+.portrait-visual:after{
+  content:"AKSHTA GUPTA\A COMPUTER SCIENCE  ·  DATA ANALYTICS"!important;
+  white-space:pre!important;
+  position:absolute!important;
+  z-index:4!important;
+  left:12%!important;
+  right:12%!important;
+  top:7%!important;
+  bottom:7%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-end!important;
+  padding:30px!important;
+  border-radius:28px!important;
+  color:#fffaf5!important;
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(18px,2vw,26px)!important;
+  font-weight:800!important;
+  line-height:1.65!important;
+  letter-spacing:-.5px!important;
+  background:linear-gradient(180deg,transparent 55%,rgba(8,8,13,.88) 100%)!important;
+  pointer-events:none!important;
+}
+.portrait-visual .profile-photo{
+  position:absolute!important;
+  z-index:2!important;
+  top:7%!important;
+  left:12%!important;
+  right:auto!important;
+  width:76%!important;
+  height:86%!important;
+  object-fit:cover!important;
+  object-position:center 24%!important;
+  border-radius:28px!important;
+  border:1px solid rgba(255,255,255,.2)!important;
+  background:#171321!important;
+  box-shadow:0 24px 70px rgba(0,0,0,.48)!important;
+}
+.portrait-visual .mini-dash{display:none!important}
+.portrait-visual .chip{
+  z-index:6!important;
+  border-radius:30px!important;
+  background:#111018!important;
+  color:#F4C76B!important;
+  border:1px solid rgba(255,255,255,.22)!important;
+  box-shadow:0 12px 35px rgba(0,0,0,.38)!important;
+  padding:13px 17px!important;
+  font-size:9px!important;
+  letter-spacing:1px!important;
+}
+.portrait-visual .chip.one{
+  top:12%!important;
+  left:auto!important;
+  right:3%!important;
+}
+.portrait-visual .chip.two{display:none!important}
+.portrait-visual .chip.three{
+  bottom:12%!important;
+  left:3%!important;
+  top:auto!important;
+}
+@media(max-width:800px){
+ .portrait-visual{height:500px!important;min-height:500px!important;width:100%!important}
+ .portrait-visual .profile-photo{left:12%!important;width:76%!important;height:86%!important}
+ .portrait-visual:after{left:12%!important;right:12%!important;top:7%!important;bottom:7%!important}
+ .portrait-visual .chip.one{right:2%!important;top:13%!important}
+ .portrait-visual .chip.three{left:2%!important;bottom:12%!important}
+}
+@media(max-width:480px){
+ .portrait-visual{height:420px!important;min-height:420px!important}
+ .portrait-visual .profile-photo{left:9%!important;top:6%!important;width:82%!important;height:88%!important;object-position:center 23%!important;border-radius:22px!important}
+ .portrait-visual:after{left:9%!important;right:9%!important;top:6%!important;bottom:6%!important;padding:20px!important;border-radius:22px!important;font-size:18px!important}
+ .portrait-visual:before{width:110%!important;height:150px!important}
+ .portrait-visual .chip.one{top:10%!important;right:0!important}
+ .portrait-visual .chip.three{bottom:10%!important;left:0!important}
+}
