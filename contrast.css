@@ -101,3 +101,43 @@
  .portrait-visual .mini-dash .bars{height:52px!important}
  .portrait-visual .chip{font-size:8px!important}
 }
+
+
+/* Refine portrait crop and spacing in the hero */
+.portrait-visual{min-height:500px!important}
+.portrait-visual .profile-photo{
+  top:12%!important;
+  right:5%!important;
+  width:43%!important;
+  height:82%!important;
+  object-fit:cover!important;
+  object-position:center 28%!important;
+  border-radius:26px!important;
+  background:transparent!important;
+  border:1px solid rgba(255,255,255,.22)!important;
+  box-shadow:0 20px 55px rgba(0,0,0,.42)!important;
+}
+.portrait-visual .chip.two{
+  top:18px!important;
+  right:18px!important;
+  left:auto!important;
+  z-index:5!important;
+}
+.portrait-visual .chip.one{top:18px!important;left:18px!important}
+.portrait-visual .mini-dash{
+  left:3%!important;
+  bottom:8%!important;
+  width:48%!important;
+  max-width:320px!important;
+}
+@media(max-width:800px){
+ .portrait-visual{min-height:440px!important}
+ .portrait-visual .profile-photo{top:13%!important;right:4%!important;width:46%!important;height:80%!important;object-position:center 27%!important}
+ .portrait-visual .chip.two{top:18px!important;right:12px!important}
+}
+@media(max-width:480px){
+ .portrait-visual{min-height:400px!important}
+ .portrait-visual .profile-photo{top:15%!important;right:3%!important;width:49%!important;height:77%!important;object-position:center 26%!important}
+ .portrait-visual .mini-dash{width:50%!important;bottom:7%!important}
+ .portrait-visual .chip.two{top:18px!important;right:8px!important}
+}
