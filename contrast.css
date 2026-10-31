@@ -247,3 +247,37 @@
  .portrait-visual .chip.one{top:10%!important;right:0!important}
  .portrait-visual .chip.three{bottom:10%!important;left:0!important}
 }
+
+
+/* Force the profile portrait to render in the desktop hero */
+.hero>.portrait-visual{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  grid-column:2!important;
+  align-self:center!important;
+  width:100%!important;
+  height:545px!important;
+  min-height:545px!important;
+  position:relative!important;
+  z-index:2!important;
+  background:transparent!important;
+}
+.hero>.portrait-visual>.profile-photo{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:absolute!important;
+  width:76%!important;
+  height:86%!important;
+  top:7%!important;
+  left:12%!important;
+  right:auto!important;
+  object-fit:cover!important;
+  object-position:center 24%!important;
+  z-index:2!important;
+}
+.hero>.portrait-visual:after{z-index:3!important}
+@media(max-width:800px){
+ .hero>.portrait-visual{grid-column:1!important;width:100%!important;height:500px!important;min-height:500px!important}
+}
